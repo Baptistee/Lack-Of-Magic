@@ -305,6 +305,7 @@ MonoBehaviour:
   projectile: {fileID: 9189081225514814566, guid: 03886956af86a4a4f87c277af297bcaf,
     type: 3}
   projectileSpeed: 15
+  shootCD: 2
 --- !u!114 &626178560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +321,7 @@ MonoBehaviour:
   movespeed: 5
   rb: {fileID: 626178561}
   cam: {fileID: 519420031}
+  dashDistance: 2
 --- !u!50 &626178561
 Rigidbody2D:
   serializedVersion: 4
