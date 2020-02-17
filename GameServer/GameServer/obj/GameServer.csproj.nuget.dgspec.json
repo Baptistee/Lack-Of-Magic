@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bapti\\Documents\\Unity\\Unity TCP UDP\\tcp-udp-networking-tutorial-part1\\GameServer\\GameServer\\GameServer.csproj": {}
+    "C:\\Users\\bapti\\Documents\\Unity\\QEBKA\\GameServer\\GameServer\\GameServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bapti\\Documents\\Unity\\Unity TCP UDP\\tcp-udp-networking-tutorial-part1\\GameServer\\GameServer\\GameServer.csproj": {
+    "C:\\Users\\bapti\\Documents\\Unity\\QEBKA\\GameServer\\GameServer\\GameServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bapti\\Documents\\Unity\\Unity TCP UDP\\tcp-udp-networking-tutorial-part1\\GameServer\\GameServer\\GameServer.csproj",
+        "projectUniqueName": "C:\\Users\\bapti\\Documents\\Unity\\QEBKA\\GameServer\\GameServer\\GameServer.csproj",
         "projectName": "GameServer",
-        "projectPath": "C:\\Users\\bapti\\Documents\\Unity\\Unity TCP UDP\\tcp-udp-networking-tutorial-part1\\GameServer\\GameServer\\GameServer.csproj",
+        "projectPath": "C:\\Users\\bapti\\Documents\\Unity\\QEBKA\\GameServer\\GameServer\\GameServer.csproj",
         "packagesPath": "C:\\Users\\bapti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bapti\\Documents\\Unity\\Unity TCP UDP\\tcp-udp-networking-tutorial-part1\\GameServer\\GameServer\\obj\\",
+        "outputPath": "C:\\Users\\bapti\\Documents\\Unity\\QEBKA\\GameServer\\GameServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bapti\\AppData\\Roaming\\NuGet\\NuGet.Config",
