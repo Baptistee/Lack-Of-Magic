@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class range : MonoBehaviour
 {
+
+    public float data_chase;
+    public float range_attaque;
 
     private GameObject player;
     // Start is called before the first frame update
@@ -15,11 +20,28 @@ public class range : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector2.Distance(transform.position,player.transform.position)<3)
+        // le monstre se positionne vers le joeur
+        if (transform.position.x > player.transform.position.x )
         {
-            GetComponent<Animator>().SetBool("chase", true);
+            GetComponent<SpriteRenderer>().flipX=true;
         }
         else
-            GetComponent<Animator>().SetBool("chase", false);
+            GetComponent<SpriteRenderer>().flipX = false;
+
+        //Debug.Log(transform.position.x);
+        //Debug.Log(transform.position.y);
+
+        if (Vector2.Distance(transform.position, player.transform.position) < range_attaque) // on tape
+        {
+           // Debug.Log(Vector2.Distance(transform.position, player.transform.position));
+            GetComponent<Animator>().SetBool("attaque", true);
+        }
+        else if (Vector2.Distance(transform.position,player.transform.position) < data_chase) // on chase
+        {
+            GetComponent<Animator>().SetBool("attaque", false);
+            GetComponent<Animator>().SetBool("chase", true);   
+        }
+        else
+            GetComponent<Animator>().SetBool("chase", false); // idle
     }
 }
