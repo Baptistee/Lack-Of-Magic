@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int lives = 3;
+
     public float movespeed = 5f;
     public Rigidbody2D rb;
     public Camera cam;
@@ -13,6 +15,8 @@ public class Player : MonoBehaviour
 
     Vector3 dashMovement;
     public float dashDistance = 2f;
+	public float dashCD = 2f;
+	float dashTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,15 +30,28 @@ public class Player : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        //Animation move_down
+        if (movement.y < 0)
+            GetComponent<Animator>().SetBool("move_down", true);
+        else
+            GetComponent<Animator>().SetBool("move_down", false);
+
         dashMovement = new Vector3(movement.x, movement.y, 0);
 
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+		
+		dashTimer -= Time.deltaTime;
 
         //Dash
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && dashTimer <= 0)
         {
+			dashTimer = dashCD;
             transform.position += dashMovement * dashDistance;
         }
+
+        //Mort
+        if (lives <= 0)
+            Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -48,5 +65,14 @@ public class Player : MonoBehaviour
         rb.rotation = angle;
 
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "projectileT1")
+        {
+            Destroy(collision.gameObject);
+            lives--;
+        }
     }
 }
