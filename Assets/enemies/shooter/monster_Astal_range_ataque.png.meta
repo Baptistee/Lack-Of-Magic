@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 59945d8c81a4d734cbbf64141823b1e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1160334120375561179
+    second: monster_Astal_range_ataque_0
+  - first:
+      213: -128552869522123982
+    second: monster_Astal_range_ataque_1
+  - first:
+      213: -7633966135488677172
+    second: monster_Astal_range_ataque_2
+  - first:
+      213: -3428689793011457896
+    second: monster_Astal_range_ataque_3
+  - first:
+      213: 8049059740054940148
+    second: monster_Astal_range_ataque_4
+  - first:
+      213: -1835599147400547076
+    second: monster_Astal_range_ataque_5
+  - first:
+      213: 5048479830617397502
+    second: monster_Astal_range_ataque_6
+  - first:
+      213: -6523074577176340762
+    second: monster_Astal_range_ataque_7
+  - first:
+      213: -7087923267980610739
+    second: monster_Astal_range_ataque_8
+  - first:
+      213: 5765882744728169573
+    second: monster_Astal_range_ataque_9
+  - first:
+      213: 3704173139264951163
+    second: monster_Astal_range_ataque_10
+  - first:
+      213: 1797351358247644398
+    second: monster_Astal_range_ataque_11
+  - first:
+      213: -6647863376933676055
+    second: monster_Astal_range_ataque_12
+  - first:
+      213: 5632337991414306222
+    second: monster_Astal_range_ataque_13
+  - first:
+      213: -6893913635664738245
+    second: monster_Astal_range_ataque_14
+  - first:
+      213: 508686448902761480
+    second: monster_Astal_range_ataque_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 288
+        width: 45
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb20c91cb55a1010800000000000000
+      internalID: 1160334120375561179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 288
+        width: 45
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233d645a8d9473ef0800000000000000
+      internalID: -128552869522123982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 288
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaf5da0f34be0690800000000000000
+      internalID: -7633966135488677172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 192
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906b8a9cc8da60d0800000000000000
+      internalID: -3428689793011457896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 192
+        width: 73
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f96fd5103104bf60800000000000000
+      internalID: 8049059740054940148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 210
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf43e250d44a686e0800000000000000
+      internalID: -1835599147400547076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 191
+        width: 67
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef89caf68adcf0640800000000000000
+      internalID: 5048479830617397502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_7
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 213
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6d5089b326975a0800000000000000
+      internalID: -6523074577176340762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 96
+        width: 66
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d433ac85753a2ad90800000000000000
+      internalID: -7087923267980610739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 120
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ca310bec7840050800000000000000
+      internalID: 5765882744728169573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_10
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 95
+        width: 62
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b735e6838ddd76330800000000000000
+      internalID: 3704173139264951163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_11
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 123
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecaaec998971f810800000000000000
+      internalID: 1797351358247644398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_12
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 96
+        width: 63
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb1a860b7b0eb3a0800000000000000
+      internalID: -6647863376933676055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5df21df851a2e40800000000000000
+      internalID: 5632337991414306222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b384bf9e216e350a0800000000000000
+      internalID: -6893913635664738245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_Astal_range_ataque_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 45
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c67e051a73f0700800000000000000
+      internalID: 508686448902761480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
