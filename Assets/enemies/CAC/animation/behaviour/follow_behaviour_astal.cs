@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class follow_behaviour : StateMachineBehaviour
+public class follow_behaviour_astal : StateMachineBehaviour
 {
 
     private Transform transformPlayer;

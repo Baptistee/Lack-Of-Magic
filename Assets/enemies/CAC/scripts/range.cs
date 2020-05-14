@@ -25,6 +25,7 @@ public class range : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //GetComponent<SpriteRenderer>().color = Color.Lerp(new Color(1,1,1,1), new Color(1, 1, 1, 0), Mathf.PingPong(Time.time, 0.3f));
         // le monstre se positionne vers le joeur
         if (transform.position.x > player.transform.position.x)
         {
@@ -53,30 +54,62 @@ public class range : MonoBehaviour
         else
             GetComponent<Animator>().SetBool("chase", false); // idle
 
-        // a la fin de l'animation de prise de degat on met le boolean a faux pour qu'il repasse sur un autre etat
-        if(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("take_damadge") && GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            GetComponent<Animator>().SetBool("take_damadge", false);
-        }
-       
+
         if(life==0) // on lance l'animation de mort qui detruira le gameobject
         {
-            GetComponent<Animator>().SetBool("take_damadge", false);
             GetComponent<Animator>().SetTrigger("dead 0");
             life--; // empeche l'animation de mort de boucler
         }
     }
 
+    //-------------------------------------------------------------------------Prise de degats --------------------------------------------------------------
+
+    IEnumerator Blinker() // le mob clignote quand il prend des degats
+    {
+       // transform.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezeAll;
+
+        for (int i = 0; i < 3; i++)
+        {
+           
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.5f);
+            yield return new WaitForSeconds(0.2f);
+            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        StopCoroutine("Blinker");
+    }
+
+    IEnumerator Knockback(float knockDur, float knockbackPWR, Vector3 knockbackDir) // knockback
+    {
+        float timer = 0;
+    
+        while (knockDur > timer)
+        {
+            timer += Time.deltaTime;
+
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, -knockbackPWR * Time.deltaTime);
+        }
+        yield return 0;
+
+    }
+
     private void OnCollisionEnter2D(Collision2D collision) // collision avec un projo
     {
+        
         if(collision.gameObject.tag=="projectileT2")
         {
             
             Destroy(collision.gameObject);
-            if(GetComponent<Animator>().GetBool("attaque")==false)
-                GetComponent<Animator>().SetBool("take_damadge", true);
+
             life --;
-            GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
+
+            if (life > 0) 
+            {
+                StartCoroutine(Blinker()); // clignote quand prends des degats
+                StartCoroutine(Knockback(1f, 1.5f, transform.position));  // knockback quand il y a une prise de degat
+            }
+          
         }
     }
 }

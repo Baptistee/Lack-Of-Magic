@@ -326,7 +326,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: gobelin
+  m_Name: astal
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: chase
@@ -405,16 +405,16 @@ AnimatorStateMachine:
     m_Position: {x: 270, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8029263763088512096}
-    m_Position: {x: 480, y: 0, z: 0}
+    m_Position: {x: 460, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7489987929781456280}
     m_Position: {x: 540, y: 140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4812427102871390619}
-    m_Position: {x: 280, y: -70, z: 0}
+    m_Position: {x: 270, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1650838987549489624}
-    m_Position: {x: 30, y: -100, z: 0}
+    m_Position: {x: -60, y: -110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -3234004027947656378}
@@ -423,7 +423,7 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_ExitPosition: {x: 660, y: -130, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -8672700203070416901}
 --- !u!1102 &4812427102871390619
