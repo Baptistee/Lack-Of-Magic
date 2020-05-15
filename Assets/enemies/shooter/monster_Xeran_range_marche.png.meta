@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: cd73e65a2d43e17439551515c4a1c58b
+guid: 946bfb97d91c0fb40b6c12386579ddcb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8266784517433865084
-    second: monster_Xeran_cac_marche_0
+      213: -3293436927690625582
+    second: monster_Xeran_range_marche_0
   - first:
-      213: -4738498209781732370
-    second: monster_Xeran_cac_marche_1
+      213: -1149364373938047735
+    second: monster_Xeran_range_marche_1
   - first:
-      213: 7898041079102742992
-    second: monster_Xeran_cac_marche_2
+      213: 5431462176770744009
+    second: monster_Xeran_range_marche_2
   - first:
-      213: 1669602754407054369
-    second: monster_Xeran_cac_marche_3
+      213: -4003990536321802714
+    second: monster_Xeran_range_marche_3
   - first:
-      213: -2146063038516539883
-    second: monster_Xeran_cac_marche_4
+      213: -8212247169246156411
+    second: monster_Xeran_range_marche_4
   - first:
-      213: 1214303952828911862
-    second: monster_Xeran_cac_marche_5
+      213: -8880800055285102422
+    second: monster_Xeran_range_marche_5
   - first:
-      213: -4124074603842198005
-    second: monster_Xeran_cac_marche_6
+      213: 2760056734697275898
+    second: monster_Xeran_range_marche_6
   - first:
-      213: -6053627808664396069
-    second: monster_Xeran_cac_marche_7
+      213: -5652191612717979298
+    second: monster_Xeran_range_marche_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -110,12 +110,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_0
+      name: monster_Xeran_range_marche_0
       rect:
         serializedVersion: 2
         x: 47
         y: 386
-        width: 125
+        width: 84
         height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48cc7abd74b764d80800000000000000
-      internalID: -8266784517433865084
+      spriteID: 2dda8da409c5b42d0800000000000000
+      internalID: -3293436927690625582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_1
+      name: monster_Xeran_range_marche_1
       rect:
         serializedVersion: 2
         x: 232
         y: 386
-        width: 130
+        width: 89
         height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -145,19 +145,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eeba22ddbf87d3eb0800000000000000
-      internalID: -4738498209781732370
+      spriteID: 905fee50133ac00f0800000000000000
+      internalID: -1149364373938047735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_2
+      name: monster_Xeran_range_marche_2
       rect:
         serializedVersion: 2
         x: 427
         y: 386
-        width: 125
+        width: 84
         height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d1ac5d048a7b9d60800000000000000
-      internalID: 7898041079102742992
+      spriteID: 9ced369921e606b40800000000000000
+      internalID: 5431462176770744009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_3
+      name: monster_Xeran_range_marche_3
       rect:
         serializedVersion: 2
         x: 47
         y: 190
-        width: 119
+        width: 84
         height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,19 +187,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c3274fbde9b2710800000000000000
-      internalID: 1669602754407054369
+      spriteID: 62e538e32d7fe68c0800000000000000
+      internalID: -4003990536321802714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_4
+      name: monster_Xeran_range_marche_4
       rect:
         serializedVersion: 2
         x: 237
         y: 196
-        width: 113
+        width: 84
         height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,19 +208,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51e40ab6907a732e0800000000000000
-      internalID: -2146063038516539883
+      spriteID: 589206db5bc380e80800000000000000
+      internalID: -8212247169246156411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_5
+      name: monster_Xeran_range_marche_5
       rect:
         serializedVersion: 2
         x: 422
         y: 196
-        width: 118
+        width: 89
         height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,19 +229,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f058bde2031ad010800000000000000
-      internalID: 1214303952828911862
+      spriteID: aa84677f66f01c480800000000000000
+      internalID: -8880800055285102422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_6
+      name: monster_Xeran_range_marche_6
       rect:
         serializedVersion: 2
         x: 47
         y: 6
-        width: 113
+        width: 84
         height: 166
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -250,19 +250,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b06a6c28ff754c6c0800000000000000
-      internalID: -4124074603842198005
+      spriteID: af14e8f0af0bd4620800000000000000
+      internalID: 2760056734697275898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_Xeran_cac_marche_7
+      name: monster_Xeran_range_marche_7
       rect:
         serializedVersion: 2
         x: 237
         y: 0
-        width: 119
+        width: 84
         height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bded12ed4913dfba0800000000000000
-      internalID: -6053627808664396069
+      spriteID: e59a081cca16f81b0800000000000000
+      internalID: -5652191612717979298
       vertices: []
       indices: 
       edges: []

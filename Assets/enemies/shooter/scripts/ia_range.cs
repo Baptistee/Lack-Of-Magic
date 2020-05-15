@@ -19,6 +19,7 @@ public class ia_range : MonoBehaviour
     public GameObject Projectile;
 
     private Transform player;
+    private Vector2 pos_projo; // positionement de la position d'ou spawn le projectile
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +37,12 @@ public class ia_range : MonoBehaviour
         if (transform.position.x > player.transform.position.x && !dead)
         {
             GetComponent<SpriteRenderer>().flipX = true;
+            pos_projo= new Vector2(transform.position.x - 1.5f, transform.position.y);
         }
         else
         {
             GetComponent<SpriteRenderer>().flipX = false;
+            pos_projo = new Vector2(transform.position.x + 1.5f, transform.position.y);
         }
 
         //---------------------------------------Mouvement de L'ia-------------------------------------------------
@@ -85,7 +88,7 @@ public class ia_range : MonoBehaviour
             // a la fin de l'animation d'attaque on fait spawn un projectile
             if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("attaque") && GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && GetComponent<Animator>().GetBool("attaque") == true)
             {
-                Vector2 pos_projo = new Vector2(transform.position.x + 1.5f, transform.position.y);
+                //Vector2 pos_projo = new Vector2(transform.position.x + 1.5f, transform.position.y);
                 Instantiate(Projectile, pos_projo, Quaternion.identity); // spwan du projectile a la position de l'enemi (sans rotation)
                 timeBetweenShots = startTimeBetweenShots;
                 transform.position = this.transform.position;
