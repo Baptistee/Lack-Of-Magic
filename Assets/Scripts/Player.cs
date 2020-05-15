@@ -151,18 +151,19 @@ public class Player : MonoBehaviour
         //Animation
         Vector3 lookDir = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         shootDir = new Vector2(lookDir.x, lookDir.y);
-        //Debug.Log(shootDir);
-        if(shootDir.x < -0.5f)
+        if(shootDir.x < 0f)
         {
             //Debug.Log("Tir vers la gauche");
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
-        else if(shootDir.x > 0.5f)
+        else if(shootDir.x > 0f)
         {
             //Debug.Log("Tir vers la droite");
             shoot_flip_x = true;
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
+
+        /*
         else if(shootDir.y > 0)
         {
             //Debug.Log("Tir vers le haut");
@@ -173,10 +174,7 @@ public class Player : MonoBehaviour
             //Debug.Log("Tir vers le bas");
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
-
-        
-        //Rigidbody2D rb = proj.GetComponent<Rigidbody2D>();
-        //rb.AddForce(firePoint.right * projectileSpeed, ForceMode2D.Impulse);
+        */
     }
 
     public void Shoot()
