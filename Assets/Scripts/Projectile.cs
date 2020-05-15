@@ -17,8 +17,8 @@ public class Projectile : MonoBehaviour
     {
         transform.position = projPos;
         shootDir = _shootDir.normalized;
+
         Destroy(gameObject, 5f);
-        Debug.Log(shootDir);
     }
 
     // Update is called once per frame

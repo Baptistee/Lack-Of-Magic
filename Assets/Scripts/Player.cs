@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int lives = 3;
     public Camera cam;
 
     //Move
@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 
 
     //Shoot
-    public Transform firePoint;
     public float shootCD = 3;
     float shootTimer = 0;
     Vector2 shootDir;
@@ -26,16 +25,29 @@ public class Player : MonoBehaviour
     float dashTimer = 0;
     public Transform dashEffect;
 
-    //GUI
-    public Texture2D shootTexture;
-    public Texture2D shootTextureCD;
-    public Texture2D dashTexture;
-    public Texture2D dashTextureCD;
+    //UI
+    //UI skills
+    public Sprite shootSprite;
+    public Sprite shootSpriteCD;
+    public Sprite dashSprite;
+    public Sprite dashSpriteCD;
+    public Image dashUI;
+    public Image shootUI;
+    public Slider dashCDSlider;
+    public Slider shootCDSlider;
+
+    //Lives
+    public int lives = 3;
+    int currentHealth;
+    public GameObject healthBar;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        currentHealth = lives;
+        dashCDSlider.maxValue = dashCD;
+        shootCDSlider.maxValue = shootCD;
     }
 
     // Update is called once per frame
@@ -95,22 +107,18 @@ public class Player : MonoBehaviour
             Dash();
         }
 
+        //Cooldowns
+        updateCDs();
+
+        //UI shoot/dash
+        UIskills();
+
         //Mort
-        if (lives <= 0)
-            Destroy(gameObject);
-    }
-
-    private void FixedUpdate()
-    {
-        //Déplacements
-        
-
-        //Rotation vers curseur
-        //Vector2 lookDir = mousePos - rb.position;
-        //float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg + 180f;
-        //rb.rotation = angle;
-        
-        
+        if (currentHealth == 0)
+        {
+            GetComponent<Animator>().SetTrigger("death");
+            currentHealth--;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -118,8 +126,22 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "projectileT1")
         {
             Destroy(collision.gameObject);
-            lives--;
+            currentHealth--;
+            updateHealthBar();
         }
+    }
+
+    void updateCDs()
+    {
+        dashCDSlider.value = dashCD - dashTimer;
+        shootCDSlider.value = shootCD - shootTimer;
+    }
+
+    void updateHealthBar()
+    {
+        Vector3 new_scale = healthBar.transform.localScale;
+        new_scale.x = (float) currentHealth / lives;
+        healthBar.transform.localScale = new_scale;
     }
 
     void ShootAnim()
@@ -129,26 +151,26 @@ public class Player : MonoBehaviour
         //Animation
         Vector3 lookDir = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         shootDir = new Vector2(lookDir.x, lookDir.y);
-        Debug.Log(shootDir);
+        //Debug.Log(shootDir);
         if(shootDir.x < -0.5f)
         {
-            Debug.Log("Tir vers la gauche");
+            //Debug.Log("Tir vers la gauche");
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
         else if(shootDir.x > 0.5f)
         {
-            Debug.Log("Tir vers la droite");
+            //Debug.Log("Tir vers la droite");
             shoot_flip_x = true;
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
         else if(shootDir.y > 0)
         {
-            Debug.Log("Tir vers le haut");
+            //Debug.Log("Tir vers le haut");
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
         else
         {
-            Debug.Log("Tir vers le bas");
+            //Debug.Log("Tir vers le bas");
             GetComponent<Animator>().SetTrigger("shoot_left");
         }
 
@@ -184,26 +206,26 @@ public class Player : MonoBehaviour
         transform.position += dashMovement * dashDistance;
     }
 
-    private void OnGUI()
+    void UIskills()
     {
         //Shoot UI
         if(shootTimer <= 0)
         {
-            GUI.Label(new Rect(10, 10, 100, 100), shootTexture);
+            shootUI.sprite = shootSprite;
         }
         else
         {
-            GUI.Label(new Rect(10, 10, 100, 100), shootTextureCD);
+            shootUI.sprite = shootSpriteCD;
         }
 
         //Dash UI
         if (dashTimer <= 0)
         {
-            GUI.Label(new Rect(120, 10, 100, 100), dashTexture);
+            dashUI.sprite = dashSprite;
         }
         else
         {
-            GUI.Label(new Rect(120, 10, 100, 100), dashTextureCD);
+            dashUI.sprite = dashSpriteCD;
         }
     }
 }
