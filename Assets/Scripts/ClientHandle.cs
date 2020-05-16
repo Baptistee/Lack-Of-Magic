@@ -10,7 +10,7 @@ public class ClientHandle : MonoBehaviour
         string _msg = _packet.ReadString();
         int _myId = _packet.ReadInt();
 
-        Debug.Log($"Message from server: {_msg}");
+        Debug.Log($"Message from server: {_msg} ID {_myId}");
         Client.instance.myId = _myId;
         ClientSend.WelcomeReceived();
 
@@ -22,9 +22,9 @@ public class ClientHandle : MonoBehaviour
         int _id = _packet.ReadInt();
         string _username = _packet.ReadString();
         Vector3 _position = _packet.ReadVector3();
-        Quaternion _rotation = _packet.ReadQuaternion();
 
-        GameManager.instance.SpawnPlayer(_id, _username, _position, _rotation);
+        Debug.Log($"Spawn Player: ID {_id}; name {_username}; pos {_position}");
+        GameManager.instance.SpawnPlayer(_id, _username, _position);
     }
 
     public static void PlayerPosition(Packet _packet)

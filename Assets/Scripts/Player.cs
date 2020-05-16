@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public int id;
+    public string username;
+
     public Camera cam;
 
     //Move
     Vector2 movement;
     public float movespeed = 5f;
-
 
     //Shoot
     public float shootCD = 3;
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
         currentHealth = lives;
         dashCDSlider.maxValue = dashCD;
         shootCDSlider.maxValue = shootCD;
@@ -116,6 +119,7 @@ public class Player : MonoBehaviour
         //Mort
         if (currentHealth == 0)
         {
+            Debug.Log("cest dedans");
             GetComponent<Animator>().SetTrigger("death");
             currentHealth--;
         }
