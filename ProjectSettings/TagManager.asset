@@ -7,6 +7,7 @@ TagManager:
   - projectileT2
   - hache
   - Wall
+  - cac_damadge
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Player
   - Ennemie
   - Wall
-  - 
+  - "Projectile_alli\xE9"
   - 
   - 
   - 
